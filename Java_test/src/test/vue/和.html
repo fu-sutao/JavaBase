@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id = 'app'>
+<!--        事件处理，使用表达式完成事件操作-->
+        <h3>点击次数：{{count}}</h3>
+        <button type="button" @click="count+=1">增加</button>
+<!--        获取事件对象-->
+        <button @click="clickEvent">点击2</button>
+<!--        事件传参-->
+        <ul>
+            <li v-for="item,index in star" @click="clickEvent(index,$event)">
+                索引值：{{index}}----内容：{{item}}
+            </li>
+        </ul>
+<!--        stop修饰符，阻止冒泡事件向上传递-->
+        <div class="btnParent" @click="clickP">
+            <button @click.stop="clickE">按钮</button>
+        </div>
+        <form>
+            <input type="text" @keydown.enter="search" name = "username" v-model="city" id="" value="查询"/>
+            <input type="submit" @click.prevent="search" value="提交">
+        </form>
+<!--        只触发一次-->
+        <button type="button" @click.once="one"></button>
+        <div>
+            <h3>{{tmp}}</h3>
+            <h3>{{brief}}</h3>
+        </div>
+
+    </div>
+
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                count:1,
+                star:['蔡徐坤','范冰冰','李晨'],
+                tmp:'',
+                city:'郑州',
+                brief:''
+            },
+            methods:{
+                clickEvent:function (index,event) {
+                    this.count++;
+                    alert(index,event)
+
+                },
+                clickE:function (event) {
+                    console.log("clickE")
+                },
+                clickP:function (event) {
+                    //因为。stop所以这个不会触发
+                    console.log("clickP")
+                },
+                search: async function () {
+                    console.log("查询天气")
+                    console.log(this.city)
+                    let url=`https://free-api.heweather.net/s6/weather/now?location=${this.city}&key=80a968f1240f4f7488ea36020b67995b`
+                    let res = await fetch(url)
+                    let result =await res.json()
+                    console.log(result)
+                    ccccc
+                }
+
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

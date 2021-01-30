@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<form class="box" action="index.html" method="post">
+    <h1>login</h1>
+    <h6 id="info"></h6>
+    <script type="text/javascript">
+        //实现点击输入框清空输入框默认值。
+        function cleartext(){
+            document.getElementById("text").value = ""
+        }
+        function clearpwd() {
+            document.getElementById("pwd").value = ""
+        }
+        function claerchackcode() {
+            document.getElementById("chackcode").value = ""
+        }
+        //检验用户名密码框验证码不为空
+        function chack() {
+            if(document.getElementById("text").value == ""){
+                document.getElementById("info").innerText = "username Can not be null"
+                return false;
+            }
+            if(document.getElementById("pwd").value==""){
+                document.getElementById("info").innerText = "password Can not be null"
+                return false;
+            }
+            if(document.getElementById("chackcode").value==""){
+                document.getElementById("info").innerText = "chackcode Can not be null"
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+    <input id = "text" type="text" name="username" onblur="chack()" onfocus="cleartext()" value="username"><br></br>
+    <input id = "pwd"type="password" name="password" onblur="chack()" onfocus="clearpwd()" value="password"><br>
+    <div class="chackcode">
+        <input id = "chackcode" type="text" name="chackcode" onblur="chack()" onfocus="claerchackcode()" value="chackcode"  />
+        <img onclick=refresh(this)  src="##">
+    </div>
+    <input id = "sub" onclick="return chack()" type="submit" name="sub" value="login">
+    <script>
+        //刷新验证码
+        function refresh(object){
+            object.src="/Student/getcode.do?flag=getcode"+"&"+new Date();
+        }
+    </script>
+    <div class="">
+        <input id = "forget" onclick="chacktext()"  type="button" name = "forget" value="forget  pwd" />
+        <input id = "other" type="button" name = "other  login" value="other  login"/>
+    </div>
+</form>
+</body>
+</html>

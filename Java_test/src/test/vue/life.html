@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>life</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id = "app">
+        {{msg}}
+
+        <hello></hello>
+    </div>
+    <script>
+        //组件
+        let aaa=Vue.component("hello",{
+            template:'<h1>{{shuju}}<button @click="xiugai">修改数据</button></h1>',
+            data:function () {
+                return {
+                    shuju: "hello world"
+                }
+            },
+            methods: {
+                xiugai:function () {
+                    this.shuju = "hello xiaoming"
+                }
+            }
+        })
+        let app = new Vue({
+            el:"#app",
+            data:{
+                msg:"hello",
+                component:{
+                    'hello':aaa
+                }
+            },
+            beforeCreate(){
+                console.log("beforcreat")
+                console.log(this)
+                console.log(this.msg)
+                console.log(this.clicke)
+            //此时数据和方法都还没有绑定
+            },
+            created(){
+                console.log("creat")
+                console.log("beforcreat")
+                console.log(this)
+                console.log(this.msg)
+                console.log(this.clicke)
+                //数据和方法已经绑定到app数据对象上，此时可以通过app拿到数据，但是还没有渲染到视图上。
+            },
+            beforeMount(){
+                console.log("beforeMount")
+                //渲染之前，dom对象无法拿到
+            },
+            mounted(){
+                console.log("mounted")
+                //已经渲染，可以通过dom对象 获得
+            },
+            beforuUpdate(){
+                console.log("beforuUpdate")
+            },
+            updated(){
+                console.log("updated")
+            },
+            methods:{
+                clicke:function () {
+
+                },
+
+            }
+        })
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

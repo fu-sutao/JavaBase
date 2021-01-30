@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        .con{
+            width: 100px;
+            height: 100px;
+            background: #3498db;
+        }
+        .fade-enter-active,.fade-leave-active{
+            transition: 4s;
+        }
+        .fade-enter,.fade-leave-to{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+<!--        单行文本输入框-->
+        <input type="text" name="us" v-model="us" value=""/>
+        <h4>{{us}}</h4>
+        <h4>多行文本双向绑定</h4>
+        <h4>复选框：选择喜欢的水果</h4>
+<!--        当你选择一个值是这个值会赋给变量chackFruits中-->
+        <input type="checkbox" v-for="item in fruits" v-model="chackFruits" :value="item"/>
+        <h3>{{chackFruits}}</h3>
+        <select v-model="city">
+            <option v-for="item in citys" :value="item">{{item}}</option>
+        </select>
+        <h3>{{city}}</h3>
+        <!--过渡动画  -->
+        <transition name="fade">
+        <div v-if="show" class="con"></div>
+        </transition>
+        <button @click="sw">切换内容</button>
+    </div>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data:{
+                us:"小明",
+                fruits:['苹果','桃子','西瓜','芒果'],
+                chackFruits:[],
+                citys:['北京','南京','深圳','广州'],
+                city:'',
+                show:true,
+
+            },
+            methods:{
+                sw:function () {
+                    this.show = !this.show
+                }
+            }
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

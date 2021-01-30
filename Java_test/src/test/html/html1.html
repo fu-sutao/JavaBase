@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="h.css">
+</head>
+<body>
+<h1>javscrip测试</h1>
+<form id = "fs" name="f" class="box">
+    <h1 id="aas">login</h1>
+    <a id = "baidu" href="$$">baidu</a>
+    <script>
+        function f1() {
+            //通过表单的名字拿到了表单对象
+            f = document.f
+            //表单对象通国name属性拿到value
+            //a = document.getElementById("text").getAttribute("value")
+            //imput为一个元素，document.getElementById("text")可以拿到元素的引用（对象）
+            //元素对象.属性或者元素对象.getAttribute都可以拿到相应的属性引用。
+            var a = document.getElementById("text").value;
+            alert(a)
+            f['us'].value="as"
+            alert(f['us'].value)
+        }
+        function a() {
+            //通国元素引用获得元素内容
+            //var b = document.getElementById("baidu").innerText
+            var b = document.getElementById("baidu").innerHTML
+            alert(b)
+        }
+        function a1() {
+            c = document.getElementById("fs")
+            window.getComputedStyle(c,null).background="#FFCC80 url(bgdesert.jpg) repeat-y"
+            alert("aas")
+            var w12 = c.currentStyle.background;
+            //alert(w12)
+        }
+        function a2() {
+            // window.alert("点击事件");
+            // document.writeln("x坐标="+a.clientX)
+            //从css中取出所有的选择器
+            //0表示加载第几个css					rules根据版本不同可能会用cssrules
+            var cssruler=document.styleSheets[0].rules;
+            //0表示加载第几个第一个标记为0
+            var style=cssruler[1];
+            style.style.backgroundColor="blue";
+        }
+    </script>
+    <input id = "text" type="text" name="us"  value="a"><br></br>
+    <input id = "pwd"type="password" name="password" value="password"><br>
+    <input id = "" type="submit" name="s" value="login">
+    <input type="button" onclick="a2()" value="测试"/>
+</form>
+
+
+</form>
+</body>
+</html>

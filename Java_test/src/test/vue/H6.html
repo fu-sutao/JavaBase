@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id = "app">
+
+        <alert-com>
+            <!--里面的变量只与父元素有关-->
+            <p>小心{{aa}}</p>
+        </alert-com>
+
+    </div>
+    <script>
+        Vue.component('alert-com',{
+            //插槽
+            template:`<div class="alert" >
+            <h1>温馨提示</h1>
+            <div class="content">
+                <slot></slot>
+            </div>
+        </div>`
+        })
+
+        var app = new Vue({
+
+            el:"#app",
+            data:{
+                aa:'asasasa'
+            }
+        })
+    </script>
+</body>
+</html>

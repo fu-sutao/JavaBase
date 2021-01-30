@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" name="id" id="as" value=""/>
+    <h1 id = "a"></h1>
+    <script>
+        //v-model实现原理
+        let inputDom = document.querySelector("#as");
+        inputDom.oninput = function () {
+            document.getElementById("a").innerText = inputDom.value
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id = "app">
+    <input type="text" v-model = "username" value=""/>
+    <!--    等价于-->
+    <input type="text" @input="username = $event.target.value" :value="username"/>
+    <h3>{{username}}</h3>
+    <input-name :username = "username" @chinput="username = $event"></input-name>
+    <!--    等同于-->
+    <input-name :username = "username" @chinput="chan"></input-name>
+    <!--    等同于-->
+    <input-name v-model="username"></input-name>
+</div>
+<script>
+
+    Vue.component('input-name',{
+        props:['username'],
+        template:`<input type="text" @input ="$emit('chinput',$event.target.value)"  value=""/>`,
+
+    })
+
+    let app = new Vue({
+        el:"#app",
+        data:{
+            username:"as"
+        },
+        methods:{
+            chan:function (data) {
+                this.username = data
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

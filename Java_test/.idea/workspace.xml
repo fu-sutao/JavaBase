@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a523868b-211e-420b-afb2-2b557bbe17d2" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="UML Class" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1UbXJcZE2EGzLOG7xpFnVcE9vCt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.fst.suanfa" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\IDEA\Java_test\src\test\java\com\fst\reflex" />
+      <recent name="G:\IDEA\Java_test\src\test\html" />
+      <recent name="G:\IDEA\Java_test\src\main\java\com\fst\design_model\buliding" />
+      <recent name="G:\IDEA\Java_test\src\test\vue" />
+      <recent name="G:\IDEA\Java_test\src\test\Markdown" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\IDEA\Java_test\src\test\java\com\fst\reflex" />
+      <recent name="G:\IDEA\Java_test\src\test\vue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.QuickSort">
+    <configuration name="QuickSort (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fst.reflex.QuickSort" />
+      <module name="Java_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fst.reflex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fst.suanfa.QuickSort" />
+      <module name="Java_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fst.suanfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSortOther" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fst.reflex.QuickSortOther" />
+      <module name="Java_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fst.reflex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="data1.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fst.data_structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fst.data_structure" />
+      <option name="MAIN_CLASS_NAME" value="com.fst.data_structure.data1" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="data1.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fst.data_structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fst.data_structure" />
+      <option name="MAIN_CLASS_NAME" value="com.fst.data_structure.data1" />
+      <option name="METHOD_NAME" value="test7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.QuickSort" />
+      <item itemvalue="Application.QuickSortOther" />
+      <item itemvalue="Application.QuickSort (1)" />
+      <item itemvalue="JUnit.data1.test7" />
+      <item itemvalue="JUnit.data1.test2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.QuickSort (1)" />
+        <item itemvalue="Application.QuickSortOther" />
+        <item itemvalue="JUnit.data1.test2" />
+        <item itemvalue="JUnit.data1.test7" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a523868b-211e-420b-afb2-2b557bbe17d2" name="默认的" comment="" />
+      <created>1575626197911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575626197911</updated>
+      <workItem from="1575626202432" duration="6032000" />
+      <workItem from="1575774578061" duration="65079000" />
+      <workItem from="1576069627782" duration="3045000" />
+      <workItem from="1576073011308" duration="2155000" />
+      <workItem from="1576133955474" duration="11467000" />
+      <workItem from="1576155246324" duration="7051000" />
+      <workItem from="1576492034196" duration="15073000" />
+      <workItem from="1577280140603" duration="1108000" />
+      <workItem from="1577324361857" duration="12000" />
+      <workItem from="1582358307498" duration="17726000" />
+      <workItem from="1582804715979" duration="6854000" />
+      <workItem from="1582878815314" duration="148641000" />
+      <workItem from="1583665876896" duration="13594000" />
+      <workItem from="1583830049001" duration="31418000" />
+      <workItem from="1584145586818" duration="7831000" />
+      <workItem from="1584192257527" duration="7368000" />
+      <workItem from="1584252169121" duration="3763000" />
+      <workItem from="1584263353455" duration="6026000" />
+      <workItem from="1584272891395" duration="21090000" />
+      <workItem from="1584438778209" duration="30690000" />
+      <workItem from="1585653223292" duration="1287000" />
+      <workItem from="1585797798902" duration="10345000" />
+      <workItem from="1585885699937" duration="5732000" />
+      <workItem from="1586652028188" duration="1186000" />
+      <workItem from="1587467687987" duration="7000" />
+      <workItem from="1587859584997" duration="2558000" />
+      <workItem from="1587970661004" duration="1565000" />
+      <workItem from="1588049778273" duration="9000" />
+      <workItem from="1588377308792" duration="1928000" />
+      <workItem from="1593672194987" duration="3171000" />
+      <workItem from="1594870088031" duration="589000" />
+      <workItem from="1595048482754" duration="591000" />
+      <workItem from="1597900345428" duration="21422000" />
+      <workItem from="1597993509210" duration="1196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="315" y="281" width="818" height="340" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1597907669839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="315" y="281" width="818" height="340" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1536.824@0.0.1536.824" timestamp="1597907669839" />
+    <state x="442" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597928185487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="442" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1597928185487" />
+    <state width="1492" height="200" key="GridCell.Tab.0.bottom" timestamp="1597960290579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597960290579" />
+    <state width="1492" height="200" key="GridCell.Tab.0.center" timestamp="1597960290579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597960290579" />
+    <state width="1492" height="200" key="GridCell.Tab.0.left" timestamp="1597960290579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597960290579" />
+    <state width="1492" height="200" key="GridCell.Tab.0.right" timestamp="1597960290579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597960290579" />
+    <state width="1492" height="260" key="GridCell.Tab.1.bottom" timestamp="1597931572310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597931572310" />
+    <state width="1492" height="260" key="GridCell.Tab.1.center" timestamp="1597931572310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597931572310" />
+    <state width="1492" height="260" key="GridCell.Tab.1.left" timestamp="1597931572310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597931572310" />
+    <state width="1492" height="260" key="GridCell.Tab.1.right" timestamp="1597931572310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597931572310" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1597907727379">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597907727379" />
+    <state x="178" y="73" key="new project wizard" timestamp="1597993764285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1597993764285" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/fst/reflex/QuickSortOther.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

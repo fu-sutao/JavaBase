@@ -1,0 +1,1 @@
+var promo = {"canOpenExtensionsPage":false,"promoHtml":"","promoId":"","promoLogUrl":""};

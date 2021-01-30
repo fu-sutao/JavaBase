@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #login{
+            background: #2ecc71;
+        }
+        #rec{
+            background: #3498db;
+        }
+    </style>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--视图部分-->
+<div id = "app">
+{{ title }}
+<!--    {{ title }}、isvip、age、isshow、tab都是在Data中的变量名，
+        可以直接通过    变量名=value改变对应的值 -->
+    <h2 v-if = "isvip"> 用户类型：Vip</h2>
+    <!--中间不能有其他元素-->
+    <h2 v-else>用户类型：普通用户</h2>
+    <hr>
+    <!--可以写判断-->
+    <h4 v-if = "age>10">age>10</h4>
+    <h4 v-show="isshow">aaaa</h4>
+    <button @click = "showpane">显示内容</button>
+    <hr>
+    <h3 v-if = "tab==1">首页1</h3>
+    <h3 v-else-if="tab==2">首页2</h3>
+    <h3 v-else>首页3</h3>
+
+<!--    @click为事件m为事件触发后所执行的方法名，-->
+
+    <button @click="m" data-id = '1'>首页1</button>
+    <button @click="m" data-id = '2'>首页2</button>
+    <button @click="m" data-id = '3'>首页3</button>
+    <hr>
+    <!--<li v-for="item in items">-->
+    <li v-for="item ,key in items">
+        <!--第一种：{{item.message}}-->
+        {{key}}---{{item}}
+    </li>
+
+<!--    当出现：src则表示src=后面的会从data的变量中取-->
+
+
+    <img :src="student[0].src">
+    <!--<条件循环渲染"先循环再判断-->
+    <li v-for="item in student" v-if="item.age==23">
+        <!--第一种：{{item.message}}-->
+        {{item}}
+    </li>
+    <!--一般会加上key index是变量，key前必须加：-->
+    <li v-for="item ,key in student"  :key="index">
+        {{item}}---{{index}}
+    </li>
+    <hr>
+    <span >{{msg}}</span>
+    <span v-once>这个将不会改变: {{ msg }}</span><br>
+    <span>{{ html }}</span>
+    <!--尽量不要使用，如果在这里插入javascrip代码同样会被执行-->
+    <span v-html="html"></span>
+    <!--修改属性的内容   或者v-bind:id="aa"-->
+    <div :id = "idname">
+        <h3>登录</h3>
+    </div>
+    <h4>{{ fist + last }}</h4>
+
+
+</div>
+<script type="text/javascript">
+    //console.log(Vue)
+    let app = new Vue({
+        el:"#app",
+        //model
+        //v-if显示时第一次直接不渲染，如果内容已经显示将其该为不显示将内容直接从dom中取出
+        //v-show不显示时会display：none但是会渲染在dom上。需要反复切换的内容建议使用V-show
+        data:{
+            title:"hello world",
+            //条件参数绑定
+            isvip:false,
+            age :12,
+            isshow:true,
+            tab:1,
+            // items: [
+            //     {message: 'aaa' },
+            //     {message: 'bbb' },
+            // ]
+            items:['gtr','gds','qw'],
+            student:[
+                {
+                    name:'gst',
+                    age:23,
+                    src:'img.jpg'},
+
+
+            ],
+            msg:"cdqsqdq",
+            html:'<li>一行</li>',
+            idname:'login',
+            fist:'f',
+            last:'st',
+            //index:1,
+        },
+        methods:{
+            showpane:function (e) {
+                console.log(e)
+                app.isshow = false;
+            },
+            m:function (e) {
+                            //拿到后面的属性对应的值
+                let tabid = e.target.dataset.id
+
+                this.tab = tabid;
+            }
+
+        }
+    })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

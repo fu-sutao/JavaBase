@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>ajaxtext</h1>
+<button onclick="sub">button</button>
+
+<script type="text/javascript">
+    var http_request = false;
+
+    function sub(){
+        if(window.ActiveXObject){
+            try {
+                http_request = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {}
+            }
+        }
+        if(window.XMLHttpRequest) { //Mozilla 浏览器
+            http_request = new XMLHttpRequest();
+            if (http_request.overrideMimeType) {//设置 MiME 类别
+                http_request.overrideMimeType("text/xml");
+            }
+        }
+        if (!http_request) { // 异常，创建对象实例失败
+            window.alert("不能创建 XMLHttpRequest 对象实例.");
+            return false;
+        }
+        http_request.onreadystatechange = processRequest;
+        // 确定发送请求的方式和 URL 以及是否同步执行下段代码
+        http_request.open("GET", "/Text/Aa", true);
+        http_request.send(null);
+
+    }
+
+</script>
+</body>
+</html>

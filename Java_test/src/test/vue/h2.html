@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        .active{
+            width: 200px;
+            height:180px;
+            background: #2a6335;
+        }
+        .page{
+            width: 100px;
+            height:180px;
+            background: #630c0b;
+        }
+    </style>
+</head>
+<body>
+<div id = "app">
+    <!--事件的绑定-->
+    <button v-on:click="ch">改变背景</button>
+    <button @click ="ch">改变背景</button>
+    <!--计算属性-->
+    <h4>{{fullname}}</h4>
+    <h4>{{music.split("").reverse().join("")}}</h4>
+    <h4>{{resv}}</h4>
+    <!--监听器-->
+    <h5>{{ msg }}</h5>
+    <!--样式绑定-->
+<!--    <div class = "page"></div>-->
+    <div  :class = "{active:istrue}" ></div>
+
+<!--    内联样式拼接-->
+    <div style="width: 100px;height:100px;background: #630c0b;"
+         :style="{border:borderWidth+'px solid red'}"></div>
+    <!-- CSS内联样式放置对象-->
+    <div :style="obj"></div>
+<!--    css数组方式拼接-->
+    <div :style="arr"></div>
+</div>
+<script type="text/javascript">
+    let app = new Vue({
+        el:'#app',
+        data:{
+            fistname: 'f',
+            lastname:'st',
+            music:'public',
+            msg:"hello",
+            istrue:true,
+            borderWidth:20,
+            obj:{
+                width:"200px",
+                height:'200px',
+                padding:'50px',
+                'background-color':'skyblue'
+            },
+            arr:[{
+                width:"200px",
+                height:'200px',
+                padding:'50px',
+                'background-color':'skyblue',
+            },{
+                border:"30px solid yellow"
+            }],
+
+        },
+        watch:{
+            msg:function (value) {
+                console.log("************")
+                console.log(value)
+            }
+        },
+        //数据计算
+        computed:{
+            fullname:function(){
+               console.log(this)
+                //会将结果进行缓存
+               return this.fistname+this.lastname
+            },
+            resv:function(){
+                return this.music.split("").reverse().join("")
+            },
+        },
+        methods:{
+            ch:function () {
+                document.body.style.background = 'rgba(36,24,23,0.9)'
+            }
+
+
+        }
+
+
+
+    })
+</script>
+</body>
+</html>

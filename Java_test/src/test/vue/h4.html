@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id ="app">
+        <ul>
+            <!--从父组件传值到子组件-->
+            <pro v-for="item, in proList" :product="item"></pro>
+        </ul>
+        <ul>
+<!--           静态属性 里面不是变量而是值-->
+            <pr school="商丘师范"></pr>
+<!--            动态属性,这种明确指出value为变量，如果在data中没有对这个变量进行赋值，则这个属性没有值-->
+            <pr :school = "value"></pr>
+        </ul>
+        <h3>{{aa}}</h3>
+        <ul>
+            <zi @evenname="chuli" school = "aaa"></zi>
+        </ul>
+        <ul>
+            <zo @evenname="chuli" school = "aaa"></zo>
+        </ul>
+    </div>
+
+    <script>
+        //产品组件
+        Vue.component("pro",{
+            props:["product"],
+            template:`<li>
+                <h3>产品名称：{{product.title}}</h3>
+                <h3>产品描述：{{product.brief}}</h3>
+            </li>`,
+        })
+        //pr为定义的一个标签
+        Vue.component("pr",{
+            //如果用schoolName 则{{school-name}}
+            //school则为标签中的属性
+            props: ['school'],
+            template:`<li>
+                <h3>学校名称：{{school}}</h3>
+            </li>`,
+        })
+        //pr为定义的一个标签
+        Vue.component("zi",{
+            props: ['school'],
+            template:`<li>
+                <h3>学校名称：{{school}}</h3>
+                <button @click="fun(school)" >传值进去</button>
+            </li>`,
+            methods:{
+                fun:function (school) {
+                    this.$emit("evenname",school)
+                }
+            }
+        })
+        Vue.component("zo",{
+            props: ['school'],
+            template:`<li>
+                <h3>学校名称：{{school}}</h3>
+                //直接拿到父元素的引用
+                <button @click="$parent.aa=school" >传值进去</button>
+            </li>`,
+            methods:{
+                fun:function (school) {
+                    this.$emit("evenname",school)
+                }
+            }
+        })
+        let app = new Vue({
+            el:"#app",
+            data:{
+                aa:"...",
+                // va:'asas',
+                value:'上海交大',
+                proList:[
+                    {title:"产品1",price:"10",brief:"产品描述1"},
+                    {title:"产品2",price:"20",brief:"产品描述2"},
+                    {title:"产品3",price:"30",brief:"产品描述3"},
+                    {title:"产品4",price:"40",brief:"产品描述4"}
+                ],
+
+            },
+            methods: {
+                chuli:function (data) {
+                    console.log(data)
+                    this.aa = data
+                }
+            }
+        })
+    </script>
+</body>
+</html>
