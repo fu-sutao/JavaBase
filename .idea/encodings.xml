@@ -2,15 +2,8 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/Base/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Base/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/LeetCode/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/LeetCode/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringBoot/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringBoot/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/WebFace/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebFace/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web1/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

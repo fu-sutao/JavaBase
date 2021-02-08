@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9c7d601-d00e-4b0f-9c07-d046b7a4b28b" name="默认更改列表" comment="默认更改列表" />
+    <list default="true" id="b9c7d601-d00e-4b0f-9c07-d046b7a4b28b" name="默认更改列表" comment="默认更改列表">
+      <change afterPath="$PROJECT_DIR$/Java_test/src/main/java/com/fst/utils/DateTimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_test/src/main/java/com/fst/utils/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_test/src/main/java/com/fst/utils/TuPian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_test/src/main/resources/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_test/src/test/java/com/fst/utils/T.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java_test/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +83,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/Java_test/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java_test/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,25 +94,29 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2045977" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\JavaBase\Java_test\src\main\resources" />
       <recent name="H:\IDEA\JavaBase\WebFace\src\main\resources\jingjian" />
       <recent name="H:\IDEA\JavaBase\WebFace\src\main\resources\local-ntp" />
       <recent name="G:\IDEA\JavaBase\Base\src\main\java\com\main\concurrency" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.fst.utils" />
+    </key>
   </component>
-  <component name="RunManager" selected="应用程序.StaticText">
-    <configuration name="StaticText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.StaticText" />
+  <component name="RunManager" selected="JUnit.T.t3">
+    <configuration name="CacheLine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.main.cacheline.CacheLine" />
       <module name="Base" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.main.*" />
+          <option name="PATTERN" value="com.main.cacheline.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,56 +124,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.jvm.classloader.T1" />
-      <module name="Base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.main.jvm.classloader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.jvm.T1" />
-      <module name="Base" />
+    <configuration name="T.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.main.jvm.*" />
+          <option name="PATTERN" value="com.fst.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.fst.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.fst.utils.T" />
+      <option name="METHOD_NAME" value="t1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.main.Test" />
-      <module name="Base" />
+    <configuration name="T.t2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.main.*" />
+          <option name="PATTERN" value="com.fst.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.fst.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.fst.utils.T" />
+      <option name="METHOD_NAME" value="t2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Math1.m1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Base" />
+    <configuration name="T.t3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="com.fst.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.Math1" />
-      <option name="METHOD_NAME" value="m1" />
+      <option name="PACKAGE_NAME" value="com.fst.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.fst.utils.T" />
+      <option name="METHOD_NAME" value="t3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T.t4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fst.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fst.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.fst.utils.T" />
+      <option name="METHOD_NAME" value="t4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -307,20 +348,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Math1.m1" />
+      <item itemvalue="Application.CacheLine" />
+      <item itemvalue="JUnit.T.t1" />
+      <item itemvalue="JUnit.T.t2" />
+      <item itemvalue="JUnit.T.t3" />
+      <item itemvalue="JUnit.T.t4" />
       <item itemvalue="Tomcat Server.Tomcat9.0.37" />
-      <item itemvalue="应用程序.T1" />
-      <item itemvalue="应用程序.T1 (1)" />
-      <item itemvalue="应用程序.Test" />
-      <item itemvalue="应用程序.StaticText" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.StaticText" />
-        <item itemvalue="应用程序.Test" />
-        <item itemvalue="JUnit.Math1.m1" />
-        <item itemvalue="应用程序.T1 (1)" />
-        <item itemvalue="应用程序.T1" />
+        <item itemvalue="JUnit.T.t3" />
+        <item itemvalue="JUnit.T.t4" />
+        <item itemvalue="JUnit.T.t2" />
+        <item itemvalue="JUnit.T.t1" />
+        <item itemvalue="Application.CacheLine" />
       </list>
     </recent_temporary>
   </component>
@@ -366,11 +407,25 @@
       <workItem from="1611978918388" duration="90000" />
       <workItem from="1611979047171" duration="2844000" />
       <workItem from="1611986036421" duration="569000" />
+      <workItem from="1611987182597" duration="26057000" />
+      <workItem from="1612328428001" duration="11526000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
